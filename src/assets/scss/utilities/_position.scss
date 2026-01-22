@@ -1,0 +1,109 @@
+@use '../abstracts/variables' as vars;
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+@each $name, $value in vars.$spacing-values {
+  .top-#{$name} {
+    top: $value;
+  }
+
+  .right-#{$name} {
+    right: $value;
+  }
+
+  .bottom-#{$name} {
+    bottom: $value;
+  }
+
+  .left-#{$name} {
+    left: $value;
+  }
+}
+
+.top-auto {
+  top: auto;
+}
+
+.right-auto {
+  right: auto;
+}
+
+.bottom-auto {
+  bottom: auto;
+}
+
+.left-auto {
+  left: auto;
+}
+
+// Inset utilities
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.inset-auto {
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.inset-x-0 {
+  left: 0;
+  right: 0;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+// Z-index
+.z-0 {
+  z-index: vars.$z-0;
+}
+
+.z-10 {
+  z-index: vars.$z-10;
+}
+
+.z-20 {
+  z-index: vars.$z-20;
+}
+
+.z-30 {
+  z-index: vars.$z-30;
+}
+
+.z-40 {
+  z-index: vars.$z-40;
+}
+
+.z-50 {
+  z-index: vars.$z-50;
+}
+
+.z-auto {
+  z-index: auto;
+}

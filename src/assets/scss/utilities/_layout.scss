@@ -1,0 +1,51 @@
+@use '../abstracts/mixins' as mixins;
+@use '../abstracts/variables' as vars;
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: vars.$spacing-4;
+  padding-right: vars.$spacing-4;
+
+  @include mixins.sm {
+    max-width: vars.$breakpoint-sm;
+  }
+
+  @include mixins.md {
+    max-width: vars.$breakpoint-md;
+  }
+
+  @include mixins.lg {
+    max-width: vars.$breakpoint-lg;
+  }
+
+  @include mixins.xl {
+    max-width: vars.$breakpoint-xl;
+  }
+
+  @include mixins.xxl {
+    max-width: vars.$breakpoint-2xl;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: vars.$spacing-4;
+  padding-right: vars.$spacing-4;
+}
+
+.container-sm {
+  max-width: vars.$breakpoint-sm;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: vars.$breakpoint-md;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: vars.$breakpoint-lg;
+  margin: 0 auto;
+}

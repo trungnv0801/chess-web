@@ -1,0 +1,265 @@
+@use '../abstracts/variables' as vars;
+
+// Box shadow
+.shadow-none {
+  box-shadow: vars.$shadow-none;
+}
+
+.shadow-sm {
+  box-shadow: vars.$shadow-sm;
+}
+
+.shadow {
+  box-shadow: vars.$shadow;
+}
+
+.shadow-md {
+  box-shadow: vars.$shadow-md;
+}
+
+.shadow-lg {
+  box-shadow: vars.$shadow-lg;
+}
+
+.shadow-xl {
+  box-shadow: vars.$shadow-xl;
+}
+
+.shadow-2xl {
+  box-shadow: vars.$shadow-2xl;
+}
+
+.shadow-inner {
+  box-shadow: vars.$shadow-inner;
+}
+
+// Opacity
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+// Cursor
+.cursor-auto {
+  cursor: auto;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-wait {
+  cursor: wait;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+.cursor-move {
+  cursor: move;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+// Pointer events
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+// User select
+.select-none {
+  user-select: none;
+}
+
+.select-text {
+  user-select: text;
+}
+
+.select-all {
+  user-select: all;
+}
+
+.select-auto {
+  user-select: auto;
+}
+
+// Transition
+.transition-none {
+  transition-property: none;
+}
+
+.transition-all {
+  transition: all vars.$transition-base vars.$transition-ease;
+}
+
+.transition {
+  transition:
+    background-color,
+    border-color,
+    color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform vars.$transition-base vars.$transition-ease;
+}
+
+.transition-colors {
+  transition:
+    background-color,
+    border-color,
+    color,
+    fill,
+    stroke vars.$transition-base vars.$transition-ease;
+}
+
+.transition-opacity {
+  transition: opacity vars.$transition-base vars.$transition-ease;
+}
+
+.transition-shadow {
+  transition: box-shadow vars.$transition-base vars.$transition-ease;
+}
+
+.transition-transform {
+  transition: transform vars.$transition-base vars.$transition-ease;
+}
+
+// Duration
+.duration-75 {
+  transition-duration: 75ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.duration-150 {
+  transition-duration: vars.$transition-fast;
+}
+
+.duration-200 {
+  transition-duration: vars.$transition-base;
+}
+
+.duration-300 {
+  transition-duration: vars.$transition-slow;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+// Transform
+.transform {
+  transform: translateX(var(--tw-translate-x, 0)) translateY(var(--tw-translate-y, 0)) rotate(var(--tw-rotate, 0))
+    skewX(var(--tw-skew-x, 0)) skewY(var(--tw-skew-y, 0)) scaleX(var(--tw-scale-x, 1)) scaleY(var(--tw-scale-y, 1));
+}
+
+.transform-none {
+  transform: none;
+}
+
+// Scale
+.scale-0 {
+  transform: scale(0);
+}
+
+.scale-50 {
+  transform: scale(0.5);
+}
+
+.scale-75 {
+  transform: scale(0.75);
+}
+
+.scale-90 {
+  transform: scale(0.9);
+}
+
+.scale-95 {
+  transform: scale(0.95);
+}
+
+.scale-100 {
+  transform: scale(1);
+}
+
+.scale-105 {
+  transform: scale(1.05);
+}
+
+.scale-110 {
+  transform: scale(1.1);
+}
+
+.scale-125 {
+  transform: scale(1.25);
+}
+
+.scale-150 {
+  transform: scale(1.5);
+}
+
+// Rotate
+.rotate-0 {
+  transform: rotate(0deg);
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.-rotate-45 {
+  transform: rotate(-45deg);
+}
+
+.-rotate-90 {
+  transform: rotate(-90deg);
+}
+
+.-rotate-180 {
+  transform: rotate(-180deg);
+}

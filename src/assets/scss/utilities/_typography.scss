@@ -1,0 +1,250 @@
+@use '../abstracts/mixins' as mixins;
+@use '../abstracts/variables' as vars;
+
+// Font family
+.font-sans {
+  font-family: vars.$font-family-base;
+}
+
+.font-serif {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.font-mono {
+  font-family: vars.$font-family-mono;
+}
+
+// Font size
+.text-xs {
+  font-size: vars.$font-size-xs;
+}
+
+.text-sm {
+  font-size: vars.$font-size-sm;
+}
+
+.text-base {
+  font-size: vars.$font-size-base;
+}
+
+.text-lg {
+  font-size: vars.$font-size-lg;
+}
+
+.text-xl {
+  font-size: vars.$font-size-xl;
+}
+
+.text-2xl {
+  font-size: vars.$font-size-2xl;
+}
+
+.text-3xl {
+  font-size: vars.$font-size-3xl;
+}
+
+.text-4xl {
+  font-size: vars.$font-size-4xl;
+}
+
+.text-5xl {
+  font-size: vars.$font-size-5xl;
+}
+
+.text-6xl {
+  font-size: vars.$font-size-6xl;
+}
+
+.text-7xl {
+  font-size: vars.$font-size-7xl;
+}
+
+.text-8xl {
+  font-size: vars.$font-size-8xl;
+}
+
+.text-9xl {
+  font-size: vars.$font-size-9xl;
+}
+
+// Font weight
+.font-thin {
+  font-weight: vars.$font-weight-thin;
+}
+
+.font-extralight {
+  font-weight: vars.$font-weight-extralight;
+}
+
+.font-light {
+  font-weight: vars.$font-weight-light;
+}
+
+.font-normal {
+  font-weight: vars.$font-weight-normal;
+}
+
+.font-medium {
+  font-weight: vars.$font-weight-medium;
+}
+
+.font-semibold {
+  font-weight: vars.$font-weight-semibold;
+}
+
+.font-bold {
+  font-weight: vars.$font-weight-bold;
+}
+
+.font-extrabold {
+  font-weight: vars.$font-weight-extrabold;
+}
+
+.font-black {
+  font-weight: vars.$font-weight-black;
+}
+
+// Line height
+.leading-none {
+  line-height: vars.$line-height-none;
+}
+
+.leading-tight {
+  line-height: vars.$line-height-tight;
+}
+
+.leading-snug {
+  line-height: vars.$line-height-snug;
+}
+
+.leading-normal {
+  line-height: vars.$line-height-normal;
+}
+
+.leading-relaxed {
+  line-height: vars.$line-height-relaxed;
+}
+
+.leading-loose {
+  line-height: vars.$line-height-loose;
+}
+
+// Text alignment
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// Text transform
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.normal-case {
+  text-transform: none;
+}
+
+// Text decoration
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+// Text overflow
+.truncate {
+  @include mixins.truncate;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-clip {
+  text-overflow: clip;
+}
+
+// Line clamp
+.line-clamp-1 {
+  @include mixins.line-clamp(1);
+}
+
+.line-clamp-2 {
+  @include mixins.line-clamp(2);
+}
+
+.line-clamp-3 {
+  @include mixins.line-clamp(3);
+}
+
+.line-clamp-4 {
+  @include mixins.line-clamp(4);
+}
+
+.line-clamp-5 {
+  @include mixins.line-clamp(5);
+}
+
+.line-clamp-6 {
+  @include mixins.line-clamp(6);
+}
+
+// Whitespace
+.whitespace-normal {
+  white-space: normal;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.whitespace-pre {
+  white-space: pre;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+// Word break
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.break-words {
+  overflow-wrap: break-word;
+}
+
+.break-all {
+  word-break: break-all;
+}
