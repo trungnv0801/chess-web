@@ -1,0 +1,96 @@
+@use 'sass:color';
+@use '../abstracts/variables' as vars;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: vars.$font-family-base;
+  font-size: vars.$font-size-base;
+  font-weight: vars.$font-weight-normal;
+  line-height: vars.$line-height-normal;
+  color: vars.$gray-900;
+  background-color: vars.$white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: vars.$font-family-heading;
+  font-weight: vars.$font-weight-bold;
+  line-height: vars.$line-height-tight;
+  color: vars.$gray-900;
+}
+
+h1 {
+  font-size: vars.$font-size-4xl;
+}
+
+h2 {
+  font-size: vars.$font-size-3xl;
+}
+
+h3 {
+  font-size: vars.$font-size-2xl;
+}
+
+h4 {
+  font-size: vars.$font-size-xl;
+}
+
+h5 {
+  font-size: vars.$font-size-lg;
+}
+
+h6 {
+  font-size: vars.$font-size-base;
+}
+
+a {
+  color: vars.$primary;
+  text-decoration: none;
+  transition: color vars.$transition-fast vars.$transition-ease;
+
+  &:hover {
+    color: color.scale(vars.$primary, $lightness: 10%);
+  }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
